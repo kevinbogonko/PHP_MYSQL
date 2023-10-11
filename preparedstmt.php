@@ -15,6 +15,13 @@ if($stmt = mysqli_prepare($link, $sql)){
     // Bind variables to the prepared statement as parameters
     mysqli_stmt_bind_param($stmt, "sss", $first_name, $last_name, $email);
     
+    /*
+    b — binary (such as image, PDF file, etc.)
+    d — double (floating point number)
+    i — integer (whole number)
+    s — string (text)
+    */
+ 
     /* Set the parameters values and execute
     the statement again to insert another row */
     $first_name = "Hermione";
